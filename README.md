@@ -1,6 +1,6 @@
-# React-Template
+# CV-Maker
 
-### Run the following
-- npm install
-- npm create vite@latest ``name of project here`` -- --template react
-- npm run dev 
+### Whats happening under the hood
+- cvSchema is a JSON object thing
+- App() takes in that schema and keeps track of everything
+- handleChange keeps track of the section keys and the event
