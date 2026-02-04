@@ -20,6 +20,16 @@ function App() {
     }));
   };
 
+  const handleSubmit = (e) => {
+  e.preventDefault();
+  console.log("Submitting CV data:", cvData);
+
+  // Simulate API call
+  setTimeout(() => {
+    console.log("✅ Data successfully submitted to API!");
+  }, 1000);
+};
+
   return (
     <>
       <h1>CV Maker</h1>
@@ -34,7 +44,7 @@ function App() {
       ))}
       </div>
       <div>
-        <button>Submit</button>
+        <button onClick={handleSubmit}>Submit</button>
         <span> </span>
         <button>Reset</button>
       </div>
